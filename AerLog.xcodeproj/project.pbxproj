@@ -7,18 +7,63 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68833A9D2CBD85EC0088B148 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833A9C2CBD85EC0088B148 /* StatsView.swift */; };
+		68833AA02CBD86390088B148 /* AddFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833A9F2CBD86390088B148 /* AddFlightView.swift */; };
+		68833AA42CBD8D0F0088B148 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AA32CBD8D0F0088B148 /* DetailsView.swift */; };
+		68833AA62CBD90F80088B148 /* TicketView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AA52CBD90F80088B148 /* TicketView.swift */; };
+		68833AA82CBDA0800088B148 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AA72CBDA0800088B148 /* Arrow.swift */; };
+		68833AAB2CBDAE700088B148 /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AAA2CBDAE700088B148 /* AirportService.swift */; };
+		68833AAD2CBDB1590088B148 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AAC2CBDB1590088B148 /* Airport.swift */; };
 		68A487E82CBC6B81008FEDCF /* AerLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487E72CBC6B81008FEDCF /* AerLogApp.swift */; };
 		68A487EA2CBC6B81008FEDCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487E92CBC6B81008FEDCF /* ContentView.swift */; };
 		68A487EC2CBC6B83008FEDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A487EB2CBC6B83008FEDCF /* Assets.xcassets */; };
 		68A487EF2CBC6B83008FEDCF /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A487EE2CBC6B83008FEDCF /* Preview Assets.xcassets */; };
+		68A487FA2CBC6BD6008FEDCF /* UpcomingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487F92CBC6BD6008FEDCF /* UpcomingView.swift */; };
+		68A487FD2CBC7230008FEDCF /* Flight.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487FC2CBC7230008FEDCF /* Flight.swift */; };
+		68A4881A2CBD566E008FEDCF /* Font + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A488192CBD566E008FEDCF /* Font + Extension.swift */; };
+		68A488232CBD5DF7008FEDCF /* NeueAlteGrotesk-Thin.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488222CBD5DF7008FEDCF /* NeueAlteGrotesk-Thin.ttf */; };
+		68A488262CBD61C0008FEDCF /* NeueAlteGrotesk-Black.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488252CBD61C0008FEDCF /* NeueAlteGrotesk-Black.ttf */; };
+		68A488282CBD61C7008FEDCF /* NeueAlteGrotesk-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488272CBD61C7008FEDCF /* NeueAlteGrotesk-Bold.ttf */; };
+		68A4882A2CBD61CE008FEDCF /* NeueAlteGrotesk-Book.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488292CBD61CE008FEDCF /* NeueAlteGrotesk-Book.ttf */; };
+		68A4882C2CBD61D6008FEDCF /* NeueAlteGrotesk-ExtraLight.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A4882B2CBD61D6008FEDCF /* NeueAlteGrotesk-ExtraLight.ttf */; };
+		68A4882E2CBD61DC008FEDCF /* NeueAlteGrotesk-Heavy.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A4882D2CBD61DB008FEDCF /* NeueAlteGrotesk-Heavy.ttf */; };
+		68A488302CBD61E3008FEDCF /* NeueAlteGrotesk-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A4882F2CBD61E3008FEDCF /* NeueAlteGrotesk-Light.ttf */; };
+		68A488322CBD61EA008FEDCF /* NeueAlteGrotesk-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488312CBD61EA008FEDCF /* NeueAlteGrotesk-Medium.ttf */; };
+		68A488342CBD61F2008FEDCF /* NeueAlteGrotesk-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488332CBD61F2008FEDCF /* NeueAlteGrotesk-Regular.ttf */; };
+		68A488362CBD61FD008FEDCF /* NeueAlteGrotesk-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = 68A488352CBD61FD008FEDCF /* NeueAlteGrotesk-SemiBold.ttf */; };
+		68A488392CBD6EF7008FEDCF /* DottedLineView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A488382CBD6EF7008FEDCF /* DottedLineView.swift */; };
+		68A4883B2CBD7465008FEDCF /* Color + Extension.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A4883A2CBD7465008FEDCF /* Color + Extension.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68833A9C2CBD85EC0088B148 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
+		68833A9F2CBD86390088B148 /* AddFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlightView.swift; sourceTree = "<group>"; };
+		68833AA32CBD8D0F0088B148 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
+		68833AA52CBD90F80088B148 /* TicketView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TicketView.swift; sourceTree = "<group>"; };
+		68833AA72CBDA0800088B148 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
+		68833AAA2CBDAE700088B148 /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
+		68833AAC2CBDB1590088B148 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
 		68A487E42CBC6B81008FEDCF /* AerLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A487E72CBC6B81008FEDCF /* AerLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerLogApp.swift; sourceTree = "<group>"; };
 		68A487E92CBC6B81008FEDCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		68A487EB2CBC6B83008FEDCF /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		68A487EE2CBC6B83008FEDCF /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		68A487F92CBC6BD6008FEDCF /* UpcomingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UpcomingView.swift; sourceTree = "<group>"; };
+		68A487FC2CBC7230008FEDCF /* Flight.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Flight.swift; sourceTree = "<group>"; };
+		68A488192CBD566E008FEDCF /* Font + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Font + Extension.swift"; sourceTree = "<group>"; };
+		68A4881B2CBD56C8008FEDCF /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		68A488222CBD5DF7008FEDCF /* NeueAlteGrotesk-Thin.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Thin.ttf"; sourceTree = "<group>"; };
+		68A488252CBD61C0008FEDCF /* NeueAlteGrotesk-Black.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Black.ttf"; sourceTree = "<group>"; };
+		68A488272CBD61C7008FEDCF /* NeueAlteGrotesk-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Bold.ttf"; sourceTree = "<group>"; };
+		68A488292CBD61CE008FEDCF /* NeueAlteGrotesk-Book.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Book.ttf"; sourceTree = "<group>"; };
+		68A4882B2CBD61D6008FEDCF /* NeueAlteGrotesk-ExtraLight.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-ExtraLight.ttf"; sourceTree = "<group>"; };
+		68A4882D2CBD61DB008FEDCF /* NeueAlteGrotesk-Heavy.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Heavy.ttf"; sourceTree = "<group>"; };
+		68A4882F2CBD61E3008FEDCF /* NeueAlteGrotesk-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Light.ttf"; sourceTree = "<group>"; };
+		68A488312CBD61EA008FEDCF /* NeueAlteGrotesk-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Medium.ttf"; sourceTree = "<group>"; };
+		68A488332CBD61F2008FEDCF /* NeueAlteGrotesk-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-Regular.ttf"; sourceTree = "<group>"; };
+		68A488352CBD61FD008FEDCF /* NeueAlteGrotesk-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "NeueAlteGrotesk-SemiBold.ttf"; sourceTree = "<group>"; };
+		68A488382CBD6EF7008FEDCF /* DottedLineView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DottedLineView.swift; sourceTree = "<group>"; };
+		68A4883A2CBD7465008FEDCF /* Color + Extension.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Color + Extension.swift"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -32,6 +77,54 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68833A9A2CBD85E10088B148 /* Stats */ = {
+			isa = PBXGroup;
+			children = (
+				68833A9B2CBD85E60088B148 /* View */,
+			);
+			path = Stats;
+			sourceTree = "<group>";
+		};
+		68833A9B2CBD85E60088B148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68833A9C2CBD85EC0088B148 /* StatsView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68833A9E2CBD86200088B148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68833A9F2CBD86390088B148 /* AddFlightView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68833AA12CBD8CB60088B148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68833AA32CBD8D0F0088B148 /* DetailsView.swift */,
+				68833AA52CBD90F80088B148 /* TicketView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68833AA22CBD8CC00088B148 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		68833AA92CBDAE550088B148 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				68833AAA2CBDAE700088B148 /* AirportService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
 		68A487DB2CBC6B81008FEDCF = {
 			isa = PBXGroup;
 			children = (
@@ -51,7 +144,14 @@
 		68A487E62CBC6B81008FEDCF /* AerLog */ = {
 			isa = PBXGroup;
 			children = (
-				68A487E72CBC6B81008FEDCF /* AerLogApp.swift */,
+				68833AA92CBDAE550088B148 /* Service */,
+				68A488372CBD6ED5008FEDCF /* Components */,
+				68A487F62CBC6B9F008FEDCF /* Core */,
+				68A488242CBD5EE7008FEDCF /* Fonts */,
+				68A4881B2CBD56C8008FEDCF /* Info.plist */,
+				68A488182CBD5654008FEDCF /* Extensions */,
+				68A487FB2CBC7215008FEDCF /* Model */,
+				68A487F52CBC6B93008FEDCF /* App */,
 				68A487E92CBC6B81008FEDCF /* ContentView.swift */,
 				68A487EB2CBC6B83008FEDCF /* Assets.xcassets */,
 				68A487ED2CBC6B83008FEDCF /* Preview Content */,
@@ -65,6 +165,102 @@
 				68A487EE2CBC6B83008FEDCF /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		68A487F52CBC6B93008FEDCF /* App */ = {
+			isa = PBXGroup;
+			children = (
+				68A487E72CBC6B81008FEDCF /* AerLogApp.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		68A487F62CBC6B9F008FEDCF /* Core */ = {
+			isa = PBXGroup;
+			children = (
+				68833A9A2CBD85E10088B148 /* Stats */,
+				68A488002CBC72B1008FEDCF /* Details */,
+				68A487FE2CBC7279008FEDCF /* AddFlight */,
+				68A487F72CBC6BA8008FEDCF /* Upcoming */,
+			);
+			path = Core;
+			sourceTree = "<group>";
+		};
+		68A487F72CBC6BA8008FEDCF /* Upcoming */ = {
+			isa = PBXGroup;
+			children = (
+				68A487F82CBC6BC4008FEDCF /* View */,
+			);
+			path = Upcoming;
+			sourceTree = "<group>";
+		};
+		68A487F82CBC6BC4008FEDCF /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68A487F92CBC6BD6008FEDCF /* UpcomingView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68A487FB2CBC7215008FEDCF /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				68A487FC2CBC7230008FEDCF /* Flight.swift */,
+				68833AAC2CBDB1590088B148 /* Airport.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		68A487FE2CBC7279008FEDCF /* AddFlight */ = {
+			isa = PBXGroup;
+			children = (
+				68833A9E2CBD86200088B148 /* View */,
+			);
+			path = AddFlight;
+			sourceTree = "<group>";
+		};
+		68A488002CBC72B1008FEDCF /* Details */ = {
+			isa = PBXGroup;
+			children = (
+				68833AA22CBD8CC00088B148 /* ViewModel */,
+				68833AA12CBD8CB60088B148 /* View */,
+			);
+			path = Details;
+			sourceTree = "<group>";
+		};
+		68A488182CBD5654008FEDCF /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				68A488192CBD566E008FEDCF /* Font + Extension.swift */,
+				68A4883A2CBD7465008FEDCF /* Color + Extension.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		68A488242CBD5EE7008FEDCF /* Fonts */ = {
+			isa = PBXGroup;
+			children = (
+				68A488252CBD61C0008FEDCF /* NeueAlteGrotesk-Black.ttf */,
+				68A488272CBD61C7008FEDCF /* NeueAlteGrotesk-Bold.ttf */,
+				68A488292CBD61CE008FEDCF /* NeueAlteGrotesk-Book.ttf */,
+				68A4882B2CBD61D6008FEDCF /* NeueAlteGrotesk-ExtraLight.ttf */,
+				68A4882D2CBD61DB008FEDCF /* NeueAlteGrotesk-Heavy.ttf */,
+				68A4882F2CBD61E3008FEDCF /* NeueAlteGrotesk-Light.ttf */,
+				68A488312CBD61EA008FEDCF /* NeueAlteGrotesk-Medium.ttf */,
+				68A488332CBD61F2008FEDCF /* NeueAlteGrotesk-Regular.ttf */,
+				68A488352CBD61FD008FEDCF /* NeueAlteGrotesk-SemiBold.ttf */,
+				68A488222CBD5DF7008FEDCF /* NeueAlteGrotesk-Thin.ttf */,
+			);
+			path = Fonts;
+			sourceTree = "<group>";
+		};
+		68A488372CBD6ED5008FEDCF /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				68A488382CBD6EF7008FEDCF /* DottedLineView.swift */,
+				68833AA72CBDA0800088B148 /* Arrow.swift */,
+			);
+			path = Components;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,8 +321,18 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68A488342CBD61F2008FEDCF /* NeueAlteGrotesk-Regular.ttf in Resources */,
+				68A488302CBD61E3008FEDCF /* NeueAlteGrotesk-Light.ttf in Resources */,
 				68A487EF2CBC6B83008FEDCF /* Preview Assets.xcassets in Resources */,
+				68A4882E2CBD61DC008FEDCF /* NeueAlteGrotesk-Heavy.ttf in Resources */,
+				68A488262CBD61C0008FEDCF /* NeueAlteGrotesk-Black.ttf in Resources */,
+				68A488232CBD5DF7008FEDCF /* NeueAlteGrotesk-Thin.ttf in Resources */,
 				68A487EC2CBC6B83008FEDCF /* Assets.xcassets in Resources */,
+				68A4882A2CBD61CE008FEDCF /* NeueAlteGrotesk-Book.ttf in Resources */,
+				68A488282CBD61C7008FEDCF /* NeueAlteGrotesk-Bold.ttf in Resources */,
+				68A488322CBD61EA008FEDCF /* NeueAlteGrotesk-Medium.ttf in Resources */,
+				68A488362CBD61FD008FEDCF /* NeueAlteGrotesk-SemiBold.ttf in Resources */,
+				68A4882C2CBD61D6008FEDCF /* NeueAlteGrotesk-ExtraLight.ttf in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -137,8 +343,20 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				68833AA62CBD90F80088B148 /* TicketView.swift in Sources */,
+				68A488392CBD6EF7008FEDCF /* DottedLineView.swift in Sources */,
+				68833AA42CBD8D0F0088B148 /* DetailsView.swift in Sources */,
+				68833AAD2CBDB1590088B148 /* Airport.swift in Sources */,
+				68A4883B2CBD7465008FEDCF /* Color + Extension.swift in Sources */,
+				68833A9D2CBD85EC0088B148 /* StatsView.swift in Sources */,
+				68833AA82CBDA0800088B148 /* Arrow.swift in Sources */,
 				68A487EA2CBC6B81008FEDCF /* ContentView.swift in Sources */,
+				68A487FD2CBC7230008FEDCF /* Flight.swift in Sources */,
 				68A487E82CBC6B81008FEDCF /* AerLogApp.swift in Sources */,
+				68833AAB2CBDAE700088B148 /* AirportService.swift in Sources */,
+				68A4881A2CBD566E008FEDCF /* Font + Extension.swift in Sources */,
+				68833AA02CBD86390088B148 /* AddFlightView.swift in Sources */,
+				68A487FA2CBC6BD6008FEDCF /* UpcomingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +492,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AerLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AerLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +522,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"AerLog/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = AerLog/Info.plist;
+				INFOPLIST_KEY_CFBundleDisplayName = "";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;

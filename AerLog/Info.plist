@@ -1,0 +1,21 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>ATSApplicationFontsPath</key>
+	<string>./Fonts</string>
+	<key>UIAppFonts</key>
+	<array>
+		<string>NeueAlteGrotesk-ExtraLight.ttf</string>
+		<string>NeueAlteGrotesk-Bold.ttf</string>
+		<string>NeueAlteGrotesk-Black.ttf</string>
+		<string>NeueAlteGrotesk-Book.ttf</string>
+		<string>NeueAlteGrotesk-Heavy.ttf</string>
+		<string>NeueAlteGrotesk-Light.ttf</string>
+		<string>NeueAlteGrotesk-Medium.ttf</string>
+		<string>NeueAlteGrotesk-Regular.ttf</string>
+		<string>NeueAlteGrotesk-SemiBold.ttf</string>
+		<string>NeueAlteGrotesk-Thin.ttf</string>
+	</array>
+</dict>
+</plist>
