@@ -7,6 +7,7 @@
 
 import Foundation
 
-struct Airport {
-    
+struct Airport: Decodable {
+    let iata: String
+    let name: String
 }

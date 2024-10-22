@@ -14,6 +14,10 @@
 		68833AA82CBDA0800088B148 /* Arrow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AA72CBDA0800088B148 /* Arrow.swift */; };
 		68833AAB2CBDAE700088B148 /* AirportService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AAA2CBDAE700088B148 /* AirportService.swift */; };
 		68833AAD2CBDB1590088B148 /* Airport.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AAC2CBDB1590088B148 /* Airport.swift */; };
+		68833AB02CBDBEA20088B148 /* ViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AAF2CBDBEA20088B148 /* ViewModel.swift */; };
+		68833AB52CBDC1C70088B148 /* AirportListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AB42CBDC1C70088B148 /* AirportListView.swift */; };
+		68833AB72CBDC1DE0088B148 /* AirportListViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AB62CBDC1DE0088B148 /* AirportListViewModel.swift */; };
+		68833ABB2CBDD5060088B148 /* AddFlightViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833ABA2CBDD5060088B148 /* AddFlightViewModel.swift */; };
 		68A487E82CBC6B81008FEDCF /* AerLogApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487E72CBC6B81008FEDCF /* AerLogApp.swift */; };
 		68A487EA2CBC6B81008FEDCF /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68A487E92CBC6B81008FEDCF /* ContentView.swift */; };
 		68A487EC2CBC6B83008FEDCF /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 68A487EB2CBC6B83008FEDCF /* Assets.xcassets */; };
@@ -43,6 +47,10 @@
 		68833AA72CBDA0800088B148 /* Arrow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Arrow.swift; sourceTree = "<group>"; };
 		68833AAA2CBDAE700088B148 /* AirportService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportService.swift; sourceTree = "<group>"; };
 		68833AAC2CBDB1590088B148 /* Airport.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Airport.swift; sourceTree = "<group>"; };
+		68833AAF2CBDBEA20088B148 /* ViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewModel.swift; sourceTree = "<group>"; };
+		68833AB42CBDC1C70088B148 /* AirportListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListView.swift; sourceTree = "<group>"; };
+		68833AB62CBDC1DE0088B148 /* AirportListViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AirportListViewModel.swift; sourceTree = "<group>"; };
+		68833ABA2CBDD5060088B148 /* AddFlightViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlightViewModel.swift; sourceTree = "<group>"; };
 		68A487E42CBC6B81008FEDCF /* AerLog.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AerLog.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		68A487E72CBC6B81008FEDCF /* AerLogApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AerLogApp.swift; sourceTree = "<group>"; };
 		68A487E92CBC6B81008FEDCF /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
@@ -125,6 +133,47 @@
 			path = Service;
 			sourceTree = "<group>";
 		};
+		68833AAE2CBDBE820088B148 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				68833AAF2CBDBEA20088B148 /* ViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		68833AB12CBDC1860088B148 /* AirportList */ = {
+			isa = PBXGroup;
+			children = (
+				68833AB32CBDC1A90088B148 /* ViewModel */,
+				68833AB22CBDC1A50088B148 /* View */,
+			);
+			path = AirportList;
+			sourceTree = "<group>";
+		};
+		68833AB22CBDC1A50088B148 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68833AB42CBDC1C70088B148 /* AirportListView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68833AB32CBDC1A90088B148 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				68833AB62CBDC1DE0088B148 /* AirportListViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		68833AB92CBDD4E50088B148 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				68833ABA2CBDD5060088B148 /* AddFlightViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
 		68A487DB2CBC6B81008FEDCF = {
 			isa = PBXGroup;
 			children = (
@@ -178,6 +227,7 @@
 		68A487F62CBC6B9F008FEDCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				68833AB12CBDC1860088B148 /* AirportList */,
 				68833A9A2CBD85E10088B148 /* Stats */,
 				68A488002CBC72B1008FEDCF /* Details */,
 				68A487FE2CBC7279008FEDCF /* AddFlight */,
@@ -189,6 +239,7 @@
 		68A487F72CBC6BA8008FEDCF /* Upcoming */ = {
 			isa = PBXGroup;
 			children = (
+				68833AAE2CBDBE820088B148 /* ViewModel */,
 				68A487F82CBC6BC4008FEDCF /* View */,
 			);
 			path = Upcoming;
@@ -214,6 +265,7 @@
 		68A487FE2CBC7279008FEDCF /* AddFlight */ = {
 			isa = PBXGroup;
 			children = (
+				68833AB92CBDD4E50088B148 /* ViewModel */,
 				68833A9E2CBD86200088B148 /* View */,
 			);
 			path = AddFlight;
@@ -345,17 +397,21 @@
 			files = (
 				68833AA62CBD90F80088B148 /* TicketView.swift in Sources */,
 				68A488392CBD6EF7008FEDCF /* DottedLineView.swift in Sources */,
+				68833AB72CBDC1DE0088B148 /* AirportListViewModel.swift in Sources */,
 				68833AA42CBD8D0F0088B148 /* DetailsView.swift in Sources */,
 				68833AAD2CBDB1590088B148 /* Airport.swift in Sources */,
 				68A4883B2CBD7465008FEDCF /* Color + Extension.swift in Sources */,
 				68833A9D2CBD85EC0088B148 /* StatsView.swift in Sources */,
 				68833AA82CBDA0800088B148 /* Arrow.swift in Sources */,
 				68A487EA2CBC6B81008FEDCF /* ContentView.swift in Sources */,
+				68833AB52CBDC1C70088B148 /* AirportListView.swift in Sources */,
 				68A487FD2CBC7230008FEDCF /* Flight.swift in Sources */,
 				68A487E82CBC6B81008FEDCF /* AerLogApp.swift in Sources */,
+				68833AB02CBDBEA20088B148 /* ViewModel.swift in Sources */,
 				68833AAB2CBDAE700088B148 /* AirportService.swift in Sources */,
 				68A4881A2CBD566E008FEDCF /* Font + Extension.swift in Sources */,
 				68833AA02CBD86390088B148 /* AddFlightView.swift in Sources */,
+				68833ABB2CBDD5060088B148 /* AddFlightViewModel.swift in Sources */,
 				68A487FA2CBC6BD6008FEDCF /* UpcomingView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -499,6 +555,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",
@@ -529,6 +586,7 @@
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.6;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
 					"@executable_path/Frameworks",

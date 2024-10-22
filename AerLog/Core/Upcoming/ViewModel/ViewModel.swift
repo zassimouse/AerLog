@@ -6,3 +6,13 @@
 //
 
 import Foundation
+
+class ViewModel: ObservableObject {
+    
+    init() {
+        print("init")
+        Task { try await AirportService.shared.getAirports(query: "vil") }
+
+        
+    }
+}

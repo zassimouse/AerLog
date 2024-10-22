@@ -6,3 +6,10 @@
 //
 
 import Foundation
+
+struct Flight {
+    var departure: Airport
+    var arrival: Airport
+    
+    var departureDate: Date
+}

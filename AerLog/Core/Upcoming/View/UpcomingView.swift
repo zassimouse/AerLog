@@ -8,6 +8,8 @@
 import SwiftUI
 
 struct UpcomingView: View {
+    @StateObject var viewModel = ViewModel()
+    
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
@@ -23,7 +25,7 @@ struct UpcomingView: View {
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
                     }
-
+                    
                     
                     
                     Spacer()
@@ -152,7 +154,8 @@ struct UpcomingView: View {
             }
             .padding()
             .foregroundStyle(.white)
-        .background(Color(.black))
+            .background(Color(.black))
+            
         }
         
         
