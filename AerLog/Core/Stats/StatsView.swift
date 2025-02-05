@@ -13,39 +13,14 @@ struct StatsView: View {
     
     var body: some View {
         VStack(alignment: .leading) {
-
-            
-            Text("My Stats")
-                .customFont(.medium, 26)
-                .padding(.vertical, 20)
-            
             ScrollView(.horizontal) {
                 HStack {
-                    VStack(alignment: .leading) {
-                        HStack {
-                            Text("Flights")
-                                .font(.customFont(.regular, 20))
-                            
-                            Spacer()
-                            
-                            Image(systemName: "arrow.up.right")
-                                .resizable()
-                                .scaledToFit()
-                                .frame(width: 15, height: 15)
-                        }
-                        
-                        Spacer()
-                        
-                        Text("40")
-                            .font(.customFont(.bold, 80))
-                    }
-                    .padding()
-                    .frame(width: 200, height: 200)
-                    .background(.aerGrey)
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-
+                    StatsCard(name: "Flights", value: 68)
+                    StatsCard(name: "Airports", value: 80)
+                    StatsCard(name: "Aircrafts", value: 20)
                 }
             }
+            .scrollIndicators(.hidden)
             
             Map()
                 .mapStyle(.standard)
@@ -57,7 +32,14 @@ struct StatsView: View {
 
                         .frame(maxWidth: .infinity, maxHeight: .infinity, alignment: .topLeading)
                         .padding()
+//                        .allowsHitTesting(false)
+                    Rectangle()
+                        .fill(.black)
+                        .blendMode(.hue)
+                        .allowsHitTesting(false)
+                    
                 }
+
 
             
             Spacer()
@@ -65,8 +47,14 @@ struct StatsView: View {
 
         }
         .navigationBarBackButtonHidden(true)
+        .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.black, for: .navigationBar)
         .toolbar {
-
+            
+            ToolbarItem(placement: .principal) {
+                Text("Stats")
+                    .font(.customFont(.medium, 20))
+              }
             
             ToolbarItem(placement: .topBarLeading) {
                 
@@ -81,17 +69,18 @@ struct StatsView: View {
                         .frame(width: 40, height: 40)
                         .background(.aerCircle)
                         .clipShape(Circle())
-                    
                 })
-                
             }
         }
         .padding()
+//        .background(.red)
         .foregroundStyle(.white)
-        .background(.aerBackground)
+
     }
 }
 
 #Preview {
-    StatsView()
+    NavigationStack {
+        StatsView()
+    }
 }

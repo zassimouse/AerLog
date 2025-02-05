@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		68346D272D534D2300FE775D /* SearchFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68346D262D534D2300FE775D /* SearchFlightView.swift */; };
+		68346D2C2D53596300FE775D /* FlightService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68346D2B2D53596300FE775D /* FlightService.swift */; };
+		68346D2F2D535F1800FE775D /* AircraftsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68346D2E2D535F1800FE775D /* AircraftsView.swift */; };
+		68346D312D53625300FE775D /* AircraftCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68346D302D53625300FE775D /* AircraftCard.swift */; };
+		68346D332D53D23900FE775D /* StatsCard.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68346D322D53D23900FE775D /* StatsCard.swift */; };
 		68833A9D2CBD85EC0088B148 /* StatsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833A9C2CBD85EC0088B148 /* StatsView.swift */; };
 		68833AA02CBD86390088B148 /* AddFlightView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833A9F2CBD86390088B148 /* AddFlightView.swift */; };
 		68833AA42CBD8D0F0088B148 /* DetailsView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 68833AA32CBD8D0F0088B148 /* DetailsView.swift */; };
@@ -40,6 +45,11 @@
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
+		68346D262D534D2300FE775D /* SearchFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SearchFlightView.swift; sourceTree = "<group>"; };
+		68346D2B2D53596300FE775D /* FlightService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FlightService.swift; sourceTree = "<group>"; };
+		68346D2E2D535F1800FE775D /* AircraftsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftsView.swift; sourceTree = "<group>"; };
+		68346D302D53625300FE775D /* AircraftCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AircraftCard.swift; sourceTree = "<group>"; };
+		68346D322D53D23900FE775D /* StatsCard.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsCard.swift; sourceTree = "<group>"; };
 		68833A9C2CBD85EC0088B148 /* StatsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatsView.swift; sourceTree = "<group>"; };
 		68833A9F2CBD86390088B148 /* AddFlightView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AddFlightView.swift; sourceTree = "<group>"; };
 		68833AA32CBD8D0F0088B148 /* DetailsView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DetailsView.swift; sourceTree = "<group>"; };
@@ -85,20 +95,30 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		68346D282D534D2C00FE775D /* View */ = {
+			isa = PBXGroup;
+			children = (
+				68346D262D534D2300FE775D /* SearchFlightView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		68346D2D2D535F0000FE775D /* Aircrafts */ = {
+			isa = PBXGroup;
+			children = (
+				68346D2E2D535F1800FE775D /* AircraftsView.swift */,
+				68346D302D53625300FE775D /* AircraftCard.swift */,
+			);
+			path = Aircrafts;
+			sourceTree = "<group>";
+		};
 		68833A9A2CBD85E10088B148 /* Stats */ = {
 			isa = PBXGroup;
 			children = (
-				68833A9B2CBD85E60088B148 /* View */,
+				68833A9C2CBD85EC0088B148 /* StatsView.swift */,
+				68346D322D53D23900FE775D /* StatsCard.swift */,
 			);
 			path = Stats;
-			sourceTree = "<group>";
-		};
-		68833A9B2CBD85E60088B148 /* View */ = {
-			isa = PBXGroup;
-			children = (
-				68833A9C2CBD85EC0088B148 /* StatsView.swift */,
-			);
-			path = View;
 			sourceTree = "<group>";
 		};
 		68833A9E2CBD86200088B148 /* View */ = {
@@ -129,6 +149,7 @@
 			isa = PBXGroup;
 			children = (
 				68833AAA2CBDAE700088B148 /* AirportService.swift */,
+				68346D2B2D53596300FE775D /* FlightService.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -227,6 +248,8 @@
 		68A487F62CBC6B9F008FEDCF /* Core */ = {
 			isa = PBXGroup;
 			children = (
+				68346D2D2D535F0000FE775D /* Aircrafts */,
+				68D3886A2D4EB94E00170C9F /* SearchFlight */,
 				68833AB12CBDC1860088B148 /* AirportList */,
 				68833A9A2CBD85E10088B148 /* Stats */,
 				68A488002CBC72B1008FEDCF /* Details */,
@@ -315,6 +338,14 @@
 			path = Components;
 			sourceTree = "<group>";
 		};
+		68D3886A2D4EB94E00170C9F /* SearchFlight */ = {
+			isa = PBXGroup;
+			children = (
+				68346D282D534D2C00FE775D /* View */,
+			);
+			path = SearchFlight;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -398,11 +429,15 @@
 				68833AA62CBD90F80088B148 /* TicketView.swift in Sources */,
 				68A488392CBD6EF7008FEDCF /* DottedLineView.swift in Sources */,
 				68833AB72CBDC1DE0088B148 /* AirportListViewModel.swift in Sources */,
+				68346D332D53D23900FE775D /* StatsCard.swift in Sources */,
 				68833AA42CBD8D0F0088B148 /* DetailsView.swift in Sources */,
 				68833AAD2CBDB1590088B148 /* Airport.swift in Sources */,
 				68A4883B2CBD7465008FEDCF /* Color + Extension.swift in Sources */,
 				68833A9D2CBD85EC0088B148 /* StatsView.swift in Sources */,
 				68833AA82CBDA0800088B148 /* Arrow.swift in Sources */,
+				68346D272D534D2300FE775D /* SearchFlightView.swift in Sources */,
+				68346D312D53625300FE775D /* AircraftCard.swift in Sources */,
+				68346D2C2D53596300FE775D /* FlightService.swift in Sources */,
 				68A487EA2CBC6B81008FEDCF /* ContentView.swift in Sources */,
 				68833AB52CBDC1C70088B148 /* AirportListView.swift in Sources */,
 				68A487FD2CBC7230008FEDCF /* Flight.swift in Sources */,
@@ -413,6 +448,7 @@
 				68833AA02CBD86390088B148 /* AddFlightView.swift in Sources */,
 				68833ABB2CBDD5060088B148 /* AddFlightViewModel.swift in Sources */,
 				68A487FA2CBC6BD6008FEDCF /* UpcomingView.swift in Sources */,
+				68346D2F2D535F1800FE775D /* AircraftsView.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

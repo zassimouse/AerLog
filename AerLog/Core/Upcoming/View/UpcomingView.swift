@@ -25,9 +25,7 @@ struct UpcomingView: View {
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
                     }
-                    
-                    
-                    
+                
                     Spacer()
                     
                     Image(systemName: "magnifyingglass")
@@ -40,7 +38,7 @@ struct UpcomingView: View {
                     
                 }
                 
-                Text("Hi, Denis!")
+                Text("Hi, Denis ✨")
                     .customFont(.medium, 26)
                 
                 VStack(alignment: .leading) {
@@ -147,18 +145,12 @@ struct UpcomingView: View {
                         .clipShape(Capsule())
                     }
                     .frame(maxWidth: .infinity)
-                    
                 }
-                
-                
             }
             .padding()
             .foregroundStyle(.white)
             .background(Color(.black))
-            
         }
-        
-        
     }
 }
 

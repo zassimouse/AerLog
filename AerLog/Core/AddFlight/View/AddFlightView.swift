@@ -22,22 +22,37 @@ struct AddFlightView: View {
                         AirportListView(flightViewModel: viewModel)
                     } label: {
                         Text("VNO")
-                            .frame(width: 60, height: 40)
-                            .background(.red)
-                            .clipShape(RoundedRectangle(cornerRadius: 5))
+                            .font(.customFont(.regular, 16))
+                            .frame(width: 70, height: 35)
+                            .background(.aerGrey)
+                            .clipShape(RoundedRectangle(cornerRadius: 6))
+                            .overlay(
+                                RoundedRectangle(cornerRadius: 6)
+                                    .stroke(Color.gray, lineWidth: 1)
+                            )
                     }
                     
-                    
                     Text("LHR")
-                        .frame(width: 60, height: 40)
-                        .background(.green)
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
+                        .font(.customFont(.regular, 16))
+                        .frame(width: 70, height: 35)
+                        .background(.aerGrey)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
                     
-                    Text("OCT 14 2024")
-                        .frame(height: 40)
+                    Text("OCT 14, 2024")
+                        .font(.customFont(.regular, 16))
+                        .frame(height: 35)
                         .frame(maxWidth: .infinity)
-                        .background(.green)
-                        .clipShape(RoundedRectangle(cornerRadius: 5))
+
+                        .background(.aerGrey)
+                        .clipShape(RoundedRectangle(cornerRadius: 6))
+                        .overlay(
+                            RoundedRectangle(cornerRadius: 6)
+                                .stroke(Color.gray, lineWidth: 1)
+                        )
                 }
                 
                 
@@ -58,9 +73,10 @@ struct AddFlightView: View {
                             .scaledToFit()
                             .frame(width: 10, height: 10)
                     }
+                    .frame(height: 40)
                     .padding(15)
                     .background(Color(.aerGrey))
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
                     
                     HStack {
                         VStack(alignment: .leading) {
@@ -77,9 +93,10 @@ struct AddFlightView: View {
                             .scaledToFit()
                             .frame(width: 10, height: 10)
                     }
+                    .frame(height: 40)
                     .padding(15)
                     .background(Color(.aerGrey))
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
                     
                     HStack {
                         VStack(alignment: .leading) {
@@ -96,23 +113,28 @@ struct AddFlightView: View {
                             .scaledToFit()
                             .frame(width: 10, height: 10)
                     }
+                    .frame(height: 40)
                     .padding(15)
                     .background(Color(.aerGrey))
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
-                    
-                    
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+
                 }
                 
                 DatePicker("Enter your birthday", selection: $date)
-                                .datePickerStyle(GraphicalDatePickerStyle())
-                                .frame(maxHeight: 400)
-                                .tint(.aerBlue)
+                    .datePickerStyle(GraphicalDatePickerStyle())
+                    .frame(maxHeight: 400)
+                    .tint(.aerBlue)
+                    .colorScheme(.dark) // or .light to get black text
+                    .padding(.horizontal, 5)
+                    .background(.aerGrey)
+                    .clipShape(RoundedRectangle(cornerRadius: 12))
+
+
                 
                 Spacer()
                 
             }
             .navigationBarBackButtonHidden(true)
-    //        .navigationTitle("Add Flight")
             .navigationBarTitleDisplayMode(.inline)
             .toolbar {
                 
@@ -143,7 +165,6 @@ struct AddFlightView: View {
             .padding()
         .foregroundStyle(.white)
         }
-        //        .background(.aerBackground)
     }
 }
 
