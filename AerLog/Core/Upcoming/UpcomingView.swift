@@ -9,13 +9,13 @@ import SwiftUI
 
 struct UpcomingView: View {
     @StateObject var viewModel = ViewModel()
-    
+    @Namespace var heroTransition
+
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
                 
                 HStack {
-                    
                     NavigationLink {
                         StatsView()
                     } label: {
@@ -25,9 +25,7 @@ struct UpcomingView: View {
                             .frame(width: 40, height: 40)
                             .clipShape(Circle())
                     }
-                
                     Spacer()
-                    
                     Image(systemName: "magnifyingglass")
                         .resizable()
                         .scaledToFill()
@@ -35,48 +33,21 @@ struct UpcomingView: View {
                         .frame(width: 40, height: 40)
                         .background(.aerGrey)
                         .clipShape(Circle())
-                    
                 }
                 
                 Text("Hi, Denis ✨")
                     .customFont(.medium, 26)
                 
-                VStack(alignment: .leading) {
-                    Text("In 4 days")
-                        .customFont(.regular, 18)
-                    
-                    Text("Vilnus to London")
-                        .customFont(.light, 50)
-                    
-                    Spacer()
-                    
-                    HStack {
-                        Text("11:40")
-                        DottedLineView()
-                        Text("11:40")
-                    }
-                    .font(.customFont(.semiBold, 20))
-                    
-                    HStack {
-                        Text("🇱🇹VNO")
-                            .padding(.horizontal, 5)
-                            .background(.opacity(0.25))
-                            .clipShape(Capsule())
-                        
-                        Spacer()
-                        
-                        Text("🇬🇧LHR")
-                            .padding(.horizontal, 5)
-                            .background(.opacity(0.25))
-                            .clipShape(Capsule())
-                    }
-                    
+                NavigationLink {
+                    CardView(style: .detail)
+                        .navigationTransition(.zoom(sourceID: 1, in: heroTransition))
+                } label: {
+                    CardView(style: .list)
+                        .frame(height: 300)
+                        .clipShape(RoundedRectangle(cornerRadius: 30))
                 }
-                .padding(20)
-                .frame(height: 300)
-                .frame(maxWidth: .infinity)
-                .background(Color("aerBlue"))
-                .clipShape(RoundedRectangle(cornerRadius: 30))
+                .matchedTransitionSource(id: 1, in: heroTransition)
+                .buttonStyle(.plain)
                 .padding(.bottom, 30)
                 
                 HStack {

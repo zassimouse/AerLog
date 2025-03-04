@@ -49,9 +49,7 @@ struct AircraftsView: View {
         }
         .padding()
         .foregroundStyle(.white)
-        
     }
-    
 }
 
 #Preview {
