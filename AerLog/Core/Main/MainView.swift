@@ -7,7 +7,7 @@
 
 import SwiftUI
 
-struct UpcomingView: View {
+struct MainView: View {
     @StateObject var viewModel = ViewModel()
     @Namespace var heroTransition
 
@@ -59,43 +59,20 @@ struct UpcomingView: View {
                     }
                     
                     Spacer()
-                    
-                    Text("See all")
-                        .underline()
+                    NavigationLink {
+                        UpcomingView()
+                    } label: {
+                        Text("See all")
+                            .underline()
+                    }
+
+
                 }
                 .font(Font.customFont(.regular, 14))
                 
                 LazyVStack {
-                    VStack {
-                        VStack(alignment: .leading) {
-                            HStack {
-                                Text("Sep 27 2024")
-                                    .foregroundStyle(.gray)
-                                    .font(.customFont(.regular, 14))
-                                
-                                Spacer()
-                                
-                                Image(systemName: "chevron.right")
-                                    .resizable()
-                                    .scaledToFit()
-                                    .frame(width: 10, height: 10)
-                            }
-                            
-                            Spacer()
-                            
-                            HStack {
-                                Text("🇫🇷Paris")
-                                    .customFont(.bold, 14)
-                                Text("to")
-                                    .customFont(.regular, 14)
-                                Text("🇨🇭Geneva")
-                                    .customFont(.bold, 14)
-                            }
-                        }
-                    }
-                    .padding(15)
-                    .background(Color(.aerGrey))
-                    .clipShape(RoundedRectangle(cornerRadius: 20))
+                    FlightCell()
+                    FlightCell()
                 }
                 
                 Spacer()
@@ -126,5 +103,5 @@ struct UpcomingView: View {
 }
 
 #Preview {
-    UpcomingView()
+    MainView()
 }

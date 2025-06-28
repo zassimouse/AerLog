@@ -11,15 +11,16 @@ struct AddFlightView: View {
     @Environment(\.dismiss) private var dismiss
     @State private var date = Date.now
     @StateObject var viewModel = AddFlightViewModel()
-    
+    @State private var showingSheet = false
     
     var body: some View {
         NavigationStack {
             VStack(alignment: .leading) {
                 
                 HStack(spacing: 5) {
-                    NavigationLink {
-                        AirportListView(flightViewModel: viewModel)
+                    Button {
+//                        AirportListView(flightViewModel: viewModel)
+                        showingSheet.toggle()
                     } label: {
                         Text("VNO")
                             .font(.customFont(.regular, 16))
@@ -31,6 +32,9 @@ struct AddFlightView: View {
                                     .stroke(Color.gray, lineWidth: 1)
                             )
                     }
+                    .sheet(isPresented: $showingSheet, content: {
+                        AirportListView(flightViewModel: viewModel)
+                    })
                     
                     Text("LHR")
                         .font(.customFont(.regular, 16))

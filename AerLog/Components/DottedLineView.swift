@@ -10,17 +10,14 @@ import SwiftUI
 struct DottedLineView: View {
     var body: some View {
         HStack {
-            // Левая точка
             Circle()
                 .fill(Color.white)
                 .frame(width: 6, height: 6)
             
-            // Пунктирная линия
             DottedLine()
                 .stroke(Color.white, style: StrokeStyle(lineWidth: 1, dash: [5, 5]))
                 .frame(height: 2)
             
-            // Правая точка
             Circle()
                 .fill(Color.white)
                 .frame(width: 6, height: 6)

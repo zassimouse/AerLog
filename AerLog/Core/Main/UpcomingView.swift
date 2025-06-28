@@ -1,36 +1,37 @@
 //
-//  AircraftsView.swift
+//  UpcomingView.swift
 //  AerLog
 //
-//  Created by Denis Haritonenko on 5.02.25.
+//  Created by Denis Haritonenko on 4.03.25.
 //
 
 import SwiftUI
 
-struct AircraftsView: View {
+struct UpcomingView: View {
     @Environment(\.dismiss) private var dismiss
-
+    
     var body: some View {
         VStack(alignment: .leading) {
-            ScrollView {
+            ScrollView(.vertical) {
                 LazyVStack {
-                    AircraftCard(text: "Airbus A320 Neo", image: "a320neo")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
+                    FlightCell()
+                    FlightCell()
                 }
             }
+            .scrollIndicators(.hidden)
+            Spacer()
+
+
         }
         .navigationBarBackButtonHidden(true)
         .navigationBarTitleDisplayMode(.inline)
+        .toolbarBackground(.black, for: .navigationBar)
         .toolbar {
             
             ToolbarItem(placement: .principal) {
-                Text("Aircrafts")
+                Text("Upcoming")
                     .font(.customFont(.medium, 20))
               }
-            
             
             ToolbarItem(placement: .topBarLeading) {
                 
@@ -49,10 +50,12 @@ struct AircraftsView: View {
             }
         }
         .padding()
+//        .background(.red)
         .foregroundStyle(.white)
+
     }
 }
 
 #Preview {
-    AircraftsView()
+    UpcomingView()
 }

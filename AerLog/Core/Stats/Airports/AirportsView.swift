@@ -7,18 +7,15 @@
 
 import SwiftUI
 
-struct AircraftsView: View {
+struct AirportsView: View {
     @Environment(\.dismiss) private var dismiss
 
     var body: some View {
         VStack(alignment: .leading) {
             ScrollView {
                 LazyVStack {
-                    AircraftCard(text: "Airbus A320 Neo", image: "a320neo")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
-                    AircraftCard(text: "Airbus A350-900", image: "a350-900")
+                    AirportCell()
+                    AirportCell()
                 }
             }
         }
@@ -27,7 +24,7 @@ struct AircraftsView: View {
         .toolbar {
             
             ToolbarItem(placement: .principal) {
-                Text("Aircrafts")
+                Text("Airports")
                     .font(.customFont(.medium, 20))
               }
             

@@ -12,8 +12,17 @@ struct AirportListView: View {
     @State private var search = ""
     @StateObject private var viewModel = AirportListViewModel()
     @ObservedObject var flightViewModel: AddFlightViewModel
+    @State var text = ""
     
     var body: some View {
+        VStack {
+            TextField("Flight Number", text: $text)
+                .padding()
+                .overlay(
+                    RoundedRectangle(cornerRadius: 10)
+                        .stroke(.gray, lineWidth: 1)
+                )
+            
             List(viewModel.airports, id: \.name) { airport in
                 
                 HStack {
@@ -28,6 +37,7 @@ struct AirportListView: View {
                     dismiss()
                 }
                 
+                
             }
             .listStyle(.grouped)
             .searchable(text: $search)
@@ -40,6 +50,9 @@ struct AirportListView: View {
                     }
                 }
             }
+
+        }
+        .presentationDetents([.height(UIScreen.main.bounds.size.height - 110)])
     }
 }
 
